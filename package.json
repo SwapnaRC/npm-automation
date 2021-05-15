@@ -4,10 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "tsc": "tsc",
+    "prestart": "echo running the prestart script && npm run tsc",
+    "start": "cross-env PORT=4000 node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.1",
+    "@types/node": "^12.12.7",
+    "cross-env": "^7.0.3",
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
