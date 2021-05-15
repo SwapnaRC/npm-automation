@@ -1,4 +1,4 @@
-# When you start the project initally you can addd the package.json file by using a cmd:
+## When you start the project initally you can addd the package.json file by using a cmd:
 
 ## step 1:
 
