@@ -1,7 +1,7 @@
 import express from 'express'
 const app  = express();
 
-const port =process.env.PORT || 4005
+const port =process.env.npm_package_config_port || 5000
 
 let runningMessage = 'Server is running on port ' + port 
 

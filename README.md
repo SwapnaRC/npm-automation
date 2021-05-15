@@ -61,4 +61,11 @@ Add the prehook in package.json -->  scripts
  "start": "cross-env PORT=4000 node index.js",
  ```
 
- another way we can add the env variable through npm configuration 
+ another way we can add the env variable through npm configuration funcationlity 
+
+```"config": {
+    "port": 5000
+  }```
+
+and in index.ts
+```const port =process.env.npm_package_config_port || 5000 ```

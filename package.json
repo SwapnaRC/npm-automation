@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "config": {
+    "port": 5000
+  },
   "scripts": {
     "tsc": "tsc",
     "prestart": "echo running the prestart script && npm run tsc",
-    "start": "cross-env PORT=4000 node index.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
